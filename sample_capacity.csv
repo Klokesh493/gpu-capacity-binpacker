@@ -1,0 +1,4 @@
+cluster,gpus_total,gpus_used,requested_gpus,reserved_inference_gpus
+us-east-train-a,128,96,16,8
+us-west-serve-b,64,54,8,12
+eu-train-c,96,70,20,6
