@@ -4,11 +4,14 @@ Suggests GPU placement decisions for ML workloads while preserving headroom for 
 
 ```mermaid
 flowchart LR
-    N0["sample_capacity.csv"]
-    N1["gpu_binpacker.py"]
-    N2["available for batch / placement decision / decisions"]
-    N3["Result for operator review"]
-    N0 --> N1 --> N2 --> N3
+    A["Cluster GPU inventory"]
+    B["Subtract used GPUs and reserved inference GPUs"]
+    C{"Batch request fits available GPUs?"}
+    D["Recommend place"]
+    E["Recommend partial queue or queue based on remaining capacity"]
+    A --> B --> C
+    C -->|Yes| D
+    C -->|No| E
 ```
 
 ## Operational boundaries

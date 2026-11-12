@@ -24,4 +24,16 @@ Run `make verify` with Make and Python 3 installed. The target runs the document
 
 ## Project walkthrough
 
+```mermaid
+flowchart LR
+    A["Cluster GPU inventory"]
+    B["Subtract used GPUs and reserved inference GPUs"]
+    C{"Batch request fits available GPUs?"}
+    D["Recommend place"]
+    E["Recommend partial queue or queue based on remaining capacity"]
+    A --> B --> C
+    C -->|Yes| D
+    C -->|No| E
+```
+
 [Architecture and data flow](docs/ARCHITECTURE.md) · [Business problem, demo, and verification](docs/CASE_STUDY.md)
