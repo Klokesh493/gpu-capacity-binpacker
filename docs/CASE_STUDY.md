@@ -2,7 +2,7 @@
 
 ## Business problem
 
-Suggests GPU placement decisions for ML workloads while preserving headroom for online inference.
+Batch workloads compete with inference for GPUs. A placement recommendation must account for reserved serving headroom.
 
 ## Reproduce the workflow
 
