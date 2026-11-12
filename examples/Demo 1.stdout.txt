@@ -1,0 +1,3 @@
+us-east-train-a: place available=24
+us-west-serve-b: queue available=-2
+eu-train-c: place available=20

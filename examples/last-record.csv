@@ -1,0 +1,2 @@
+cluster,gpus_total,gpus_used,requested_gpus,reserved_inference_gpus
+eu-train-c,96,70,20,6
